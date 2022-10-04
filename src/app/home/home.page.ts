@@ -20,8 +20,11 @@ export class HomePage {
     else if (this.number < this.randomNumber) {
       this.mensaje = "El número que ha dicho es menor que el aleatorio"
     }
-    else {
+    else if (this.number == this.randomNumber){
       this.mensaje = "El número que ha dicho es correcto"
+    } 
+    else {
+      this.mensaje = "El dato introducido es inválido o no se ha introducido nada"
     }
   }
 
