@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   randomNumber:number = Math.floor(Math.random()*100) +1;
-  number: number;
-  mensaje:String;
+  number: number = 0
+  mensaje:String = "Introduzca un número del 1 al 100";
 
   constructor() {}
 
@@ -31,7 +31,7 @@ export class HomePage {
   reset(){
     this.randomNumber = Math.floor(Math.random()*100) +1;
     this.number = 0
-    this.mensaje = ""
+    this.mensaje = "Introduzca un número del 1 al 100"
   }
 
 }
