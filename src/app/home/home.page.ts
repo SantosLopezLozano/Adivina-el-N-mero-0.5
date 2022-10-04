@@ -29,7 +29,6 @@ export class HomePage {
     this.randomNumber = Math.floor(Math.random()*10) +1;
     this.number = 0
     this.mensaje = ""
-
   }
 
 }
