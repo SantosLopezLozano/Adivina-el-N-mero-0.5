@@ -1,20 +1,15 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <h1>Adivina el número del 1 al 10</h1>
+
+  <div id="input">
+    <p>Number:</p>
+    <ion-input type="number" value="100" [(ngModel)]="number"></ion-input>
+    <ion-button (click)="onTry()">Try</ion-button>
+    <p>{{mensaje}}</p>
   </div>
+  
 </ion-content>

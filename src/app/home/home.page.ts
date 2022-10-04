@@ -7,6 +7,22 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  randomNumber:number = Math.floor(Math.random()*10) +1;
+  number: number;
+  mensaje:String;
+
   constructor() {}
+
+  onTry(){
+    if (this.number > this.randomNumber) {
+      this.mensaje = "El número que ha dicho es mayor que el aleatorio"
+    }
+    else if (this.number < this.randomNumber) {
+      this.mensaje = "El número que ha dicho es menor que el aleatorio"
+    }
+    else {
+      this.mensaje = "El número que ha dicho es correcto"
+    }
+  }
 
 }
