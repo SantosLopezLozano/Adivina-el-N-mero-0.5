@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  randomNumber:number = Math.floor(Math.random()*10) +1;
+  randomNumber:number = Math.floor(Math.random()*100) +1;
   number: number;
   mensaje:String;
 
@@ -26,7 +26,7 @@ export class HomePage {
   }
 
   reset(){
-    this.randomNumber = Math.floor(Math.random()*10) +1;
+    this.randomNumber = Math.floor(Math.random()*100) +1;
     this.number = 0
     this.mensaje = ""
   }
